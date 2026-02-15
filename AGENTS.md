@@ -13,6 +13,8 @@ Android companion app voor Rokid Glasses. Virtueel AI-team van gespecialiseerde 
 **SDK**: CXR-M (Android) ↔ CXR-S (YodaOS-Sprite op bril)  
 **Communicatie**: Bluetooth + WiFi P2P
 
+**Langetermijndoel (2e project)**: Toegankelijkheid — blinden (boeken horen via TTS/LLM), doven (real-time captions via ASR, geen gebarentaal nodig).
+
 ---
 
 ## Team Structuur & Rollen

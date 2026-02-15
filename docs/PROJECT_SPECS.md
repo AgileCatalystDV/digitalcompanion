@@ -11,6 +11,19 @@ Android companion app voor Rokid Glasses met **eigen AI-backend** — niet afhan
 
 ---
 
+## Toegankelijkheid (2e project, langetermijndoel)
+
+Verbetering voor **blinden en slechthorenden**:
+
+| Doelgroep | Use case | Technologie |
+|-----------|----------|-------------|
+| **Blinden** | Boeken *horen* — voorgelezen via LLM op telefoon of remote | TTS, LLM (tekst → spraak), bril als audio-output |
+| **Doven/slechthorenden** | Geen gebarentaal nodig van sprekers — tekst op scherm van wat er gezegd wordt | ASR (speech-to-text) → real-time captions op bril |
+
+*Implementatie correct uitvoeren is cruciaal; kwaliteit ASR/TTS bepaalt bruikbaarheid.*
+
+---
+
 ## Hardware
 
 - **Rokid Glasses** (CXR-M compatible)
@@ -45,6 +58,15 @@ Android companion app voor Rokid Glasses met **eigen AI-backend** — niet afhan
 - Eigen TTS (text-to-speech)
 - Eigen LLM/assistant
 - AI key event handling
+
+---
+
+## Fase 4 (Toegankelijkheid — 2e project)
+
+- **Blinden**: Boeken horen via LLM + TTS op bril
+- **Doven**: Real-time captions via ASR — sprekers geen gebarentaal nodig
+
+*Zie [ACCESSIBILITY_REALISM.md](./ACCESSIBILITY_REALISM.md) voor haalbaarheidsanalyse.*
 
 ---
 

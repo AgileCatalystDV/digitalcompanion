@@ -1,6 +1,6 @@
 # Digital Companion — Rokid Glasses Android App
 
-Android companion app voor [Rokid Glasses](https://global.rokid.com/pages/rokid-glasses). Eigen AI-backend (niet Rokid-ecosysteem).
+Android companion app voor [Rokid Glasses](https://global.rokid.com/pages/rokid-glasses). Eigen AI-backend (niet Rokid-ecosysteem). **Langetermijn**: toegankelijkheid voor blinden (boeken horen) en doven (real-time captions).
 
 ## Project
 
