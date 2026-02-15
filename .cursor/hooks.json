@@ -1,0 +1,20 @@
+{
+  "agents": {
+    "architect": "architect.md",
+    "android-developer": "android-developer.md",
+    "backend-developer": "backend-developer.md",
+    "devops-specialist": "devops-specialist.md",
+    "qa-engineer": "qa-engineer.md",
+    "security-specialist": "security-specialist.md",
+    "co-pm": "co-pm.md"
+  },
+  "skills": [
+    "architecture-review",
+    "code-review",
+    "deployment-pipeline",
+    "security-audit",
+    "threat-modeling",
+    "android-mock-sdk",
+    "ble-integration"
+  ]
+}

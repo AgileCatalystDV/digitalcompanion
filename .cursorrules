@@ -1,0 +1,21 @@
+# Digital Companion — Project Rules
+
+Rules guide. Skills do. Commands trigger. (CO_PM_RESEARCH)
+
+## Commands
+
+- `./gradlew assembleDebug` — Build debug APK
+- `./gradlew test` — Run unit tests
+- `./gradlew installDebug` — Install on device/emulator
+- `./gradlew :app:lintDebug` — Lint check
+
+## Code Style
+
+- Kotlin strict, Jetpack Compose
+- SDK via facade: no CxrApi in UI; use RokidSdkFacade
+- See `app/src/main/java/.../MainActivity.kt` for canonical Compose pattern
+
+## Workflow
+
+- Plan Mode (Shift+Tab) vóór grote wijzigingen
+- Reference files: `@ARCHITECTURE.md`, `@rokidsdk.md`
