@@ -56,6 +56,13 @@ class CxrApiFacade : RokidSdkFacade { /* wraps CxrApi.getInstance() */ }
 class MockRokidFacade : RokidSdkFacade { /* simuleert responses */ }
 ```
 
+**Huidige implementatiestatus**:
+
+- `RokidSdkFacade` is actief als app-facing contract
+- `MockRokidFacade` voedt de huidige telefoon-demo en S26 dry-run
+- De production seam is voorbereid, maar `CxrApiFacade` is nog niet aan de echte Rokid SDK gekoppeld
+- Een `CompanionViewModel` beheert mock scan/connect/control state voor de Compose UI
+
 ---
 
 ## MVP Scope (Sprint 0)
@@ -65,13 +72,19 @@ class MockRokidFacade : RokidSdkFacade { /* simuleert responses */ }
 3. **Basis UI** — Knoppen: Brightness, Volume, Battery status
 4. **Mock mode** — Zonder bril: MockRokidFacade, log output
 
+**Tijdelijke uitvoeringskeuze**:
+
+- Eerste deploytarget is de Android telefoon, niet de bril zelf
+- Runtime BLE permissions blijven voorbereid in het manifest, maar worden pas actief aangevraagd zodra de echte scan/connect path is geïmplementeerd
+
 ---
 
 ## Module Structuur (Android)
 
 ```
 app/                    # Main app
-core:sdk-abstraction/   # Rokid SDK wrapper + mock
+app/sdk/                # Rokid facade + mock/pending implementations
+app/ui/                 # ViewModel + UI state
 core:domain/            # Use cases (optioneel later)
 ```
 

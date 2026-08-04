@@ -29,6 +29,21 @@ CXR-M SDK voor Android companion apps. Bidirectionele communicatie via Bluetooth
 - Maven: `https://maven.rokid.com/repository/maven-public/`
 - Dependency: `com.rokid.cxr:client-m:1.0.1-20250812.080117-2`
 
+## Current Project Status
+
+- Huidige app-flow draait als mock-first companion APK op de Android telefoon
+- `client-m` staat nog niet actief in de build voor production calls
+- De echte Rokid integratie wordt pas aangesloten nadat de SDK docs opnieuw gerefresht en gevalideerd zijn
+
+## Documentation Refresh Required
+
+Voor de volgende implementatiefase moeten we de Rokid SDK docs expliciet opnieuw refreshen en controleren:
+
+1. Bevestig de juiste dependency en versie voor de niet-Style Rokid AI Glasses
+2. Valideer de echte connect-flow: `initBluetooth` -> `onConnectionInfo` -> `connectDevice`
+3. Controleer welke callbacks, permissions en transportstappen verplicht zijn voor dit specifieke device
+4. Herbevestig of deploy uitsluitend via Android companion hoort te lopen, en niet rechtstreeks op de bril
+
 ## ROKID_SERVICE_UUID
 
 ```
